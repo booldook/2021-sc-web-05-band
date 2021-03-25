@@ -17,6 +17,7 @@ time, mark, audio, video, input, select {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
+	line-height: 1;
 	vertical-align: baseline;
 	box-sizing: border-box;
 }
@@ -50,6 +51,7 @@ img {vertical-align: bottom;}
 .clearfix::after {display: block; content: ""; clear: both;}
 .img {width: 100%;}
 .imgx {max-width: 100%;}
+a {display: inline-block;}
 
 .swiper-button-prev, 
 .swiper-button-next, 

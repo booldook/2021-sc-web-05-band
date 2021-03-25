@@ -3,12 +3,24 @@
 
 
 /************** default ***************/
-html, body {font: 16px 'Lato', sans-serif; height: 5000px;}
+html, body {font: 16px 'Lato', sans-serif; height: 5000px; letter-spacing: -1px;}
 .wrapper {max-width: 800px; padding: 0 16px; margin: auto;}
 
 
 /************** header-wrapper ***************/
-
+.header-wrapper {position: fixed; width: 100%; background-color: #121212; color: #f9f9f9;}
+.header-wrapper > .navi-wrapper {float: left;}
+.header-wrapper > .navi-wrapper > .navi {float: left; position: relative;}
+.header-wrapper > .navi-wrapper > .navi > a {padding: 1em 1.25em;}
+.header-wrapper > .navi-wrapper > .navi:hover {background-color: #ddd; color: #121212;}
+.header-wrapper > .navi-wrapper > .navi .fa {margin-left: 0.325em;}
+.header-wrapper > .navi-wrapper > .navi:hover > .sub-wrap {display: block;}
+.header-wrapper > .navi-wrapper > .navi > .sub-wrap {position: absolute; background-color: #f1f1f1; color: #121212; box-shadow: 0 0 6px rgba(0, 0, 0, .5); display: none;}
+.header-wrapper > .navi-wrapper > .navi > .sub-wrap > .sub:hover {background-color: #ddd;}
+.header-wrapper > .navi-wrapper > .navi > .sub-wrap > .sub > a {width: 160px; padding: 1em 1.25em;}
+.header-wrapper > .search-wrapper {float: right;}
+.header-wrapper > .search-wrapper:hover {background-color: #f32;}
+.header-wrapper > .search-wrapper > a {padding: 1em 1.25em;}
 
 
 /************** main-wrapper ***************/
@@ -33,23 +45,23 @@ html, body {font: 16px 'Lato', sans-serif; height: 5000px;}
 
 
 /************** response ***************/
-@media (min-width: 576px) {
+@media (max-width: 1400px) {
 	
 }
 
-@media (min-width: 768px) {
+@media (max-width: 1200px) {
 
 }
 
-@media (min-width: 992px) {
+@media (max-width: 992px) {
 
 }
 
-@media (min-width: 1200px) {
+@media (max-width: 768px) {
 
 }
 
-@media (min-width: 1400px) {
+@media (max-width: 576px) {
 
 }
 
