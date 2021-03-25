@@ -3,7 +3,7 @@
 
 
 /************** default ***************/
-html, body {font: 16px 'Lato', sans-serif; height: 5000px; letter-spacing: -1px;}
+html, body {font: 16px 'Lato', sans-serif; height: 5000px; letter-spacing: -1px; color: #121212;}
 .wrapper {max-width: 800px; padding: 0 16px; margin: auto;}
 
 
@@ -21,6 +21,10 @@ html, body {font: 16px 'Lato', sans-serif; height: 5000px; letter-spacing: -1px;
 .header-wrapper > .search-wrapper {float: right;}
 .header-wrapper > .search-wrapper:hover {background-color: #f32;}
 .header-wrapper > .search-wrapper > a {padding: 1em 1.25em;}
+.header-wrapper > .bars-wrapper {float: right; display: none;}
+.header-wrapper > .bars-wrapper:hover {background-color: #ddd; color: #121212;}
+.header-wrapper > .bars-wrapper > a {padding: 1em 1.25em;}
+.header-wrapper > .monavi-wrapper {width: 100%; background-color: #121212; color: #f9f9f9;}
 
 
 /************** main-wrapper ***************/
@@ -58,7 +62,9 @@ html, body {font: 16px 'Lato', sans-serif; height: 5000px; letter-spacing: -1px;
 }
 
 @media (max-width: 768px) {
-
+	.header-wrapper > .navi-wrapper > .navi:not(:first-child) {display: none;}
+	.header-wrapper > .search-wrapper {display: none;}
+	.header-wrapper > .bars-wrapper {display: block;}
 }
 
 @media (max-width: 576px) {
