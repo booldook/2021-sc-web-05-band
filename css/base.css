@@ -47,7 +47,7 @@ table {
 a {display: inline-block;}
 a:link, a:visited, a:hover, a:active {color: inherit; text-decoration: none;}
 img {vertical-align: bottom;}
-button {border-radius: 0; outline: none; border: none; font-size: inherit; background-color: transparent; cursor: pointer;}
+button {border-radius: 0; outline: none; border: none; font-size: inherit; background-color: transparent; cursor: pointer; padding: 0;}
 
 /******************** Base ***********************/
 .clearfix::after {display: block; content: ""; clear: both;}
