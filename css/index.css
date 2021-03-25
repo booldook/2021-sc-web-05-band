@@ -3,7 +3,8 @@
 
 
 /************** default ***************/
-html, body {font: 16px 'Lato', sans-serif}
+html, body {font: 16px 'Lato', sans-serif; height: 5000px;}
+.wrapper {max-width: 800px; padding: 0 16px; margin: auto;}
 
 
 /************** header-wrapper ***************/
@@ -23,10 +24,6 @@ html, body {font: 16px 'Lato', sans-serif}
 
 
 /************** contact-wrapper ***************/
-
-
-
-/************** map-wrapper ***************/
 
 
 
