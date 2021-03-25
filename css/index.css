@@ -4,7 +4,10 @@
 
 /************** default ***************/
 html, body {font: 16px 'Lato', sans-serif; height: 5000px; letter-spacing: -0.5px; color: #121212;}
-.wrapper {max-width: 800px; padding: 0 16px; margin: auto;}
+.wrapper {max-width: 800px; padding: 5em 1em; margin: auto;}
+.wrapper > .title {text-align: center;}
+.wrapper > h2.title {font-size: 1.625em; letter-spacing: 5px; margin-bottom: 1em;}
+.wrapper > h3.title {font-style: italic; color: #aaa; margin-bottom: 1.5em;}
 
 
 /************** header-wrapper ***************/
@@ -31,7 +34,8 @@ html, body {font: 16px 'Lato', sans-serif; height: 5000px; letter-spacing: -0.5p
 
 /************** main-wrapper ***************/
 .main-wrapper {position: relative; padding-top: 48px;}
-.main-wrapper > .bt-swiper {color: #f9f9f9; font-weight: lighter; font-size: 5em; position: absolute; top: 50%; transform: translateY(-50%); z-index: 5; cursor: pointer; user-select: none; outline: none;}
+.main-wrapper > .bt-swiper {color: #f9f9f9; font-weight: lighter; font-size: 5em; position: absolute; top: 50%; transform: translateY(-50%); z-index: 5; cursor: pointer; user-select: none; outline: none; transition: all .5s; opacity: .1;}
+.main-wrapper > .bt-swiper:hover {opacity: 1;}
 .main-wrapper > .bt-swiper.bt-prev {left: 16px;}
 .main-wrapper > .bt-swiper.bt-next {right: 16px;}
 .main-wrapper .slogan-wrap {position: absolute; color: #f9f9f9; left: 50%; transform: translateX(-50%); bottom: 32px; text-align: center;}
@@ -40,7 +44,10 @@ html, body {font: 16px 'Lato', sans-serif; height: 5000px; letter-spacing: -0.5p
 
 
 /************** band-wrapper ***************/
-
+.band-wrapper > .wrapper > .comment {line-height: 1.5; text-align: justify;}
+.band-wrapper > .wrapper > .member-wrap > .member {width: 33.3333%; float: left; padding: 6%; text-align: center;}
+.band-wrapper > .wrapper > .member-wrap > .member > .name {margin-bottom: 1.25em;}
+.band-wrapper > .wrapper > .member-wrap > .member > img {border-radius: 4px;}
 
 
 /************** tour-wrapper ***************/
@@ -78,6 +85,7 @@ html, body {font: 16px 'Lato', sans-serif; height: 5000px; letter-spacing: -0.5p
 }
 
 @media (max-width: 576px) {
-
+	.band-wrapper > .wrapper > .comment {margin-bottom: 3em;}
+	.band-wrapper > .wrapper > .member-wrap > .member {width: 100%; padding: 5% 20%;}
 }
 
