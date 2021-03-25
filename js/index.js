@@ -5,7 +5,7 @@ $('.bars-wrapper').click(function() {
 var swiper = new Swiper('.main-wrapper .swiper-container', {
 	loop: true,
 	effect: 'fade',
-	speed: 0,
+	speed: 1000,
 	autoplay: { delay: 5000, disableOnInteraction: false },
 	navigation: {
 		nextEl: '.main-wrapper .bt-next',
