@@ -3,12 +3,12 @@
 
 
 /************** default ***************/
-html, body {font: 16px 'Lato', sans-serif; height: 5000px; letter-spacing: -1px; color: #121212;}
+html, body {font: 16px 'Lato', sans-serif; height: 5000px; letter-spacing: -0.5px; color: #121212;}
 .wrapper {max-width: 800px; padding: 0 16px; margin: auto;}
 
 
 /************** header-wrapper ***************/
-.header-wrapper {position: fixed; width: 100%; background-color: #121212; color: #f9f9f9;}
+.header-wrapper {position: fixed; z-index: 9; width: 100%; background-color: #121212; color: #f9f9f9;}
 .header-wrapper > .navi-wrapper {float: left;}
 .header-wrapper > .navi-wrapper > .navi {float: left; position: relative;}
 .header-wrapper > .navi-wrapper > .navi > a {padding: 1em 1.25em;}
@@ -30,10 +30,13 @@ html, body {font: 16px 'Lato', sans-serif; height: 5000px; letter-spacing: -1px;
 
 
 /************** main-wrapper ***************/
-.main-wrapper {position: relative;}
+.main-wrapper {position: relative; padding-top: 48px;}
 .main-wrapper > .bt-swiper {color: #f9f9f9; font-weight: lighter; font-size: 5em; position: absolute; top: 50%; transform: translateY(-50%); z-index: 5; cursor: pointer; user-select: none; outline: none;}
 .main-wrapper > .bt-swiper.bt-prev {left: 16px;}
 .main-wrapper > .bt-swiper.bt-next {right: 16px;}
+.main-wrapper .slogan-wrap {position: absolute; color: #f9f9f9; left: 50%; transform: translateX(-50%); bottom: 32px; text-align: center;}
+.main-wrapper .slogan-wrap > .title {font-size: 1.5em; margin-bottom: 0.75em;}
+.main-wrapper .slogan-wrap > .content {font-weight: bold;}
 
 
 /************** band-wrapper ***************/
