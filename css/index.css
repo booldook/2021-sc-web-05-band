@@ -80,6 +80,28 @@ html, body {font: 16px 'Lato', sans-serif; height: 5000px; letter-spacing: -0.5p
 
 
 
+/************** modal-wrapper ***************/
+.modal-wrapper {background-color: rgba(0, 0, 0, .3); width: 100%; height: 100vh; position: fixed; top: 0; left: 0; z-index: 10;}
+.modal-wrapper > .modal-wrap {width: 800px; margin: 15vh auto; background-color: #f9f9f9; box-shadow: 0 0 10px rgba(0, 0, 0, .5)}
+.modal-wrapper > .modal-wrap > .modal-header {background-color: #009688; position: relative;}
+.modal-wrapper > .modal-wrap > .modal-header > h2.title {color: #f9f9f9; font-size: 2em; text-align: center; padding: 1.25em 0; letter-spacing: 4px; line-height: 1;}
+.modal-wrapper > .modal-wrap > .modal-header > h2.title > .fa {margin-right: 0.5em;}
+.modal-wrapper > .modal-wrap > .modal-header > .bt-close {position: absolute; top: 0; right: 0; padding: 0.75em 1em; font-size: 1.125em; color: #f9f9f9; cursor: pointer;}
+.modal-wrapper > .modal-wrap > .modal-header > .bt-close:hover {background-color: #013b36;}
+.modal-wrapper > .modal-wrap > .modal-body {padding: 1em;}
+.modal-wrapper > .modal-wrap > .modal-body > form {}
+.modal-wrapper > .modal-wrap > .modal-body > form > * {width: 100%;}
+.modal-wrapper > .modal-wrap > .modal-body > form > label {margin-bottom: 0.75em;}
+.modal-wrapper > .modal-wrap > .modal-body > form > input {margin-bottom: 1.25em; padding: 0.75em; border: 1px solid #ccc;}
+.modal-wrapper > .modal-wrap > .modal-body > form > button {padding: 1em; background-color: #009688; color: #f9f9f9;}
+.modal-wrapper > .modal-wrap > .modal-body > form > button:hover {background-color: #013b36;}
+.modal-wrapper > .modal-wrap > .modal-footer {padding: 1em;}
+.modal-wrapper > .modal-wrap > .modal-footer > .bt-close {float: left; color: #f9f9f9; background-color: #f44336; padding: 0.75em 1em;}
+.modal-wrapper > .modal-wrap > .modal-footer > .bt-close:hover {background-color: #99251c;}
+.modal-wrapper > .modal-wrap > .modal-footer > .help {float: right;}
+.modal-wrapper > .modal-wrap > .modal-footer > .help > a {color: #2196F3; text-decoration: underline;}
+
+
 
 /************** response ***************/
 @media (max-width: 1400px) {
@@ -91,7 +113,7 @@ html, body {font: 16px 'Lato', sans-serif; height: 5000px; letter-spacing: -0.5p
 }
 
 @media (max-width: 992px) {
-
+	.modal-wrapper > .modal-wrap {width: 700px;}
 }
 
 @media (max-width: 768px) {
@@ -100,6 +122,8 @@ html, body {font: 16px 'Lato', sans-serif; height: 5000px; letter-spacing: -0.5p
 	.header-wrapper > .bars-wrapper {display: block;}
 	.header-wrapper > .monavi-wrapper {display: none;}
 	.header-wrapper > .monavi-wrapper.active {display: block;}
+
+	.modal-wrapper > .modal-wrap {width: 500px;}
 }
 
 @media (max-width: 576px) {
@@ -107,5 +131,6 @@ html, body {font: 16px 'Lato', sans-serif; height: 5000px; letter-spacing: -0.5p
 	.band-wrapper > .wrapper > .member-wrap > .member {width: 100%; padding: 5% 20%;}
 	.tour-wrapper > .wrapper > .city-wrap {width: 100%;}
 	.tour-wrapper > .wrapper > .city-wrap > .city {width: 100%; margin-right: 0; margin-bottom: 5%;}
+	.modal-wrapper > .modal-wrap {width: 96%;}
 }
 
