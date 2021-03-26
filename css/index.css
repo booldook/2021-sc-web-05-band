@@ -62,7 +62,7 @@ a.anchor {height: 0; line-height: 0; display: inline;}
 .tour-wrapper > .wrapper > .ticket-wrap > .ticket > span.cnt {float: right; background-color: #121212; color: #f9f9f9; border-radius: 50%; margin-right: 2em; padding: 0.325em 0.625em;}
 .tour-wrapper > .wrapper > .city-wrap {width: 102%;}
 .tour-wrapper > .wrapper > .city-wrap > .city {width: 31.3333%; margin-right: 2%; float: left;}
-.tour-wrapper > .wrapper > .city-wrap > .city > .img-wrap {}
+/* .tour-wrapper > .wrapper > .city-wrap > .city > .img-wrap {} */
 .tour-wrapper > .wrapper > .city-wrap > .city > .img-wrap > img {transition: all 0.5s;}
 .tour-wrapper > .wrapper > .city-wrap > .city > .img-wrap:hover > img {opacity: .7;}
 .tour-wrapper > .wrapper > .city-wrap > .city > .cont-wrap {background-color: #f9f9f9; padding: 1em;}
@@ -111,7 +111,7 @@ a.anchor {height: 0; line-height: 0; display: inline;}
 .modal-wrapper > .modal-wrap > .modal-header > .bt-close {position: absolute; top: 0; right: 0; padding: 0.75em 1em; font-size: 1.125em; color: #f9f9f9; cursor: pointer;}
 .modal-wrapper > .modal-wrap > .modal-header > .bt-close:hover {background-color: #013b36;}
 .modal-wrapper > .modal-wrap > .modal-body {padding: 1em;}
-.modal-wrapper > .modal-wrap > .modal-body > form {}
+/* .modal-wrapper > .modal-wrap > .modal-body > form {} */
 .modal-wrapper > .modal-wrap > .modal-body > form > * {width: 100%;}
 .modal-wrapper > .modal-wrap > .modal-body > form > label {margin-bottom: 0.75em;}
 .modal-wrapper > .modal-wrap > .modal-body > form > input {margin-bottom: 1.25em; padding: 0.75em; border: 1px solid #ccc;}
