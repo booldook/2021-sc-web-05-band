@@ -78,6 +78,7 @@ html, body {font: 16px 'Lato', sans-serif; height: 5000px; letter-spacing: -0.5p
 .contact-wrapper > .wrapper > .contact-wrap > .info-wrap > li > .fa {width: 2em;}
 .contact-wrapper > .wrapper > .contact-wrap > .contact-form {width: 50%; float: right;}
 .contact-wrapper > .wrapper > .contact-wrap > .contact-form > input {border: 1px solid #ccc; padding: 0.75em; margin-bottom: 0.5em;}
+.contact-wrapper > .wrapper > .contact-wrap > .contact-form > input:focus {outline: 2px solid #6ef7fb;}
 .contact-wrapper > .wrapper > .contact-wrap > .contact-form > input[name='name'] {width: 48%; float: left;}
 .contact-wrapper > .wrapper > .contact-wrap > .contact-form > input[name='email'] {width: 48%; float: right;}
 .contact-wrapper > .wrapper > .contact-wrap > .contact-form > input[name='msg'] {width: 100%;}
@@ -91,7 +92,12 @@ html, body {font: 16px 'Lato', sans-serif; height: 5000px; letter-spacing: -0.5p
 
 
 /************** footer-wrapper ***************/
-
+.footer-wrapper {padding: 3em 0; text-align: center;}
+.footer-wrapper > .sns-wrap {margin-bottom: 1em;}
+.footer-wrapper > .sns-wrap > li {display: inline-block; font-size: 1.25em; margin: 0 .125em; opacity: .7;}
+.footer-wrapper > .sns-wrap > li:hover {opacity: .9;}
+.footer-wrapper > .copyright {opacity: .7;}
+.footer-wrapper > .copyright > a {text-decoration: underline;}
 
 
 /************** modal-wrapper ***************/
@@ -130,6 +136,10 @@ html, body {font: 16px 'Lato', sans-serif; height: 5000px; letter-spacing: -0.5p
 
 @media (max-width: 992px) {
 	.modal-wrapper > .modal-wrap {width: 700px;}
+	.contact-wrapper > .wrapper > .contact-wrap > .info-wrap {width: 100%;}
+	.contact-wrapper > .wrapper > .contact-wrap > .contact-form {width: 100%;}
+	.contact-wrapper > .wrapper > .contact-wrap > .contact-form > input[name='name'] {width: 100%; float: none;}
+	.contact-wrapper > .wrapper > .contact-wrap > .contact-form > input[name='email'] {width: 100%; float: none;}
 }
 
 @media (max-width: 768px) {
