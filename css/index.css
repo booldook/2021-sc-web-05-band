@@ -3,11 +3,12 @@
 
 
 /************** default ***************/
-html, body {font: 16px 'Lato', sans-serif; height: 5000px; letter-spacing: -0.5px; color: #121212;}
+html, body {font: 16px 'Lato', sans-serif; letter-spacing: -0.5px; color: #121212;}
 .wrapper {max-width: 800px; padding: 5em 1em; margin: auto;}
 .wrapper > .title {text-align: center;}
 .wrapper > h2.title {font-size: 1.625em; letter-spacing: 5px; margin-bottom: 1em;}
 .wrapper > h3.title {font-style: italic; color: #aaa; margin-bottom: 1.75em;}
+a.anchor {height: 0; line-height: 0; display: inline;}
 
 
 /************** header-wrapper ***************/
