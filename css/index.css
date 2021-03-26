@@ -81,8 +81,8 @@ html, body {font: 16px 'Lato', sans-serif; height: 5000px; letter-spacing: -0.5p
 
 
 /************** modal-wrapper ***************/
-.modal-wrapper {background-color: rgba(0, 0, 0, .3); width: 100%; height: 100vh; position: fixed; top: 0; left: 0; z-index: 10;}
-.modal-wrapper > .modal-wrap {width: 800px; margin: 15vh auto; background-color: #f9f9f9; box-shadow: 0 0 10px rgba(0, 0, 0, .5)}
+.modal-wrapper {background-color: rgba(0, 0, 0, .3); width: 100%; height: 100vh; position: fixed; top: 0; left: 0; z-index: 10; display: none;}
+.modal-wrapper > .modal-wrap {width: 800px; margin: 15vh auto; background-color: #f9f9f9; box-shadow: 0 0 10px rgba(0, 0, 0, .5); transition: all 0.5s; transform: translateY(-100vh);}
 .modal-wrapper > .modal-wrap > .modal-header {background-color: #009688; position: relative;}
 .modal-wrapper > .modal-wrap > .modal-header > h2.title {color: #f9f9f9; font-size: 2em; text-align: center; padding: 1.25em 0; letter-spacing: 4px; line-height: 1;}
 .modal-wrapper > .modal-wrap > .modal-header > h2.title > .fa {margin-right: 0.5em;}
@@ -100,6 +100,8 @@ html, body {font: 16px 'Lato', sans-serif; height: 5000px; letter-spacing: -0.5p
 .modal-wrapper > .modal-wrap > .modal-footer > .bt-close:hover {background-color: #99251c;}
 .modal-wrapper > .modal-wrap > .modal-footer > .help {float: right;}
 .modal-wrapper > .modal-wrap > .modal-footer > .help > a {color: #2196F3; text-decoration: underline;}
+
+.modal-wrapper.active {display: block;}
 
 
 
