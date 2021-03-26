@@ -27,3 +27,16 @@ var swiper = new Swiper('.main-wrapper .swiper-container', {
 		prevEl: '.main-wrapper .bt-prev',
 	},
 })
+
+var center = new kakao.maps.LatLng(37.555496, 126.936840)
+var container = document.getElementById('map')
+var options = {
+	center: center,
+	level: 2
+}
+var map = new kakao.maps.Map(container, options)
+map.setZoomable(false);
+
+$(window).resize(function() {
+	map.setCenter(center);
+})
